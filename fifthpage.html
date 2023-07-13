@@ -50,7 +50,7 @@
                     
                     <div class="row button">
                         <!--<input type="submit" value="Login" onclick="auth()">-->
-                        <button type="button" class="button" onclick="func()">Login</button>
+                        <button type="submit" class="button" onclick="func()">Login</button>
                     </div>
                 </form>
             </div>
@@ -135,6 +135,8 @@
             var password = document.getElementById("password").value;
             if (email == "admin@gmail.com" && password == "admin@123") {
                 const secret = document.getElementById("secret")
+                const loginSec = document.getElementById("Login")
+                loginSec.classList.add('hide')
                 secret.classList.add('active')
                 alert("Login success");
             }
@@ -152,6 +154,9 @@
         }
         .active {
             display: block !important;
+        }
+        .hide {
+            display: none !important;
         }
     </style>
 </body>
