@@ -35,7 +35,7 @@
         </div>
     </section>
     <section>
-        <div class="container" id="container Login2">
+        <div class="container" id="container">
             <div class="wrapper">
                 <div class="title"><span>Login Form</span></div>
                 <form action="#">
@@ -256,7 +256,7 @@
             var password = document.getElementById("password").value;
             if (email == "admin@gmail.com" && password == "admin@222") {
                 const secret = document.getElementById("secret")
-                const loginSec = document.getElementById("Login2")
+                const loginSec = document.getElementById("container")
                 loginSec.classList.add('hide')
                 secret.classList.add('active')
                 alert("Login success");
